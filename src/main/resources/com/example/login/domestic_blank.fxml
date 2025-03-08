@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="479.0" prefWidth="628.0" style="-fx-background-color: dadce3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.AdvisorDomesticController">
+    <children>
+        <AnchorPane prefHeight="479.0" prefWidth="115.0" style="-fx-background-color: #919ecf;">
+            <children>
+                <Button layoutY="1.0" mnemonicParsing="false" onAction="#goToAdvisorHome" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Home">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets></Button>
+                <Button layoutY="49.0" mnemonicParsing="false" onAction="#goToAdvisorSellBlank" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: #5966cf; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Sell Blank" />
+                <Button layoutY="97.0" mnemonicParsing="false" onAction="#goToAdvisorRefund" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Make Refund" />
+                <Button layoutY="145.0" mnemonicParsing="false" onAction="#goToAdvisorReport" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Generate Report" />
+                <Button layoutY="193.0" mnemonicParsing="false" onAction="#goToAdvisorStock" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="View Stock" />
+                <Button layoutY="289.0" mnemonicParsing="false" onAction="#goToAdvisorLogout" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Logout" />
+                <Button layoutY="241.0" mnemonicParsing="false" onAction="#goToAdvisorCustomer" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Create Customer" />
+            </children>
+        </AnchorPane>
+      <Label layoutX="203.0" layoutY="61.0" text="Departure" />
+      <Label layoutX="206.0" layoutY="124.0" text="1st Leg" />
+      <Label layoutX="206.0" layoutY="154.0" text="Final Destination" />
+      <Label layoutX="206.0" layoutY="184.0" text="Currency" />
+      <Label layoutX="206.0" layoutY="214.0" text="Exchange Rate" />
+      <Label layoutX="206.0" layoutY="279.0" text="Total Amount" />
+      <Label layoutX="204.0" layoutY="339.0" text="Payment Type" />
+      <TextField fx:id="domDeparture" layoutX="340.0" layoutY="56.0" promptText="Departure" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button layoutX="340.0" layoutY="417.0" mnemonicParsing="false" onAction="#make_sell" style="-fx-background-color: #31AED1;" text="Submit" />
+      <Button layoutX="438.0" layoutY="417.0" mnemonicParsing="false" onAction="#goToAdvisorSellBlank" style="-fx-background-color: #31AED1;" text="Cancel" />
+      <Label layoutX="204.0" layoutY="369.0" text="Commission Percentage" />
+      <Label layoutX="206.0" layoutY="30.0" text="BlankNumber" />
+      <ChoiceBox fx:id="domBlankChoice" layoutX="340.0" layoutY="26.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: #31AED1;" />
+      <Label layoutX="206.0" layoutY="246.0" text="Discount Percentage" />
+      <Label layoutX="206.0" layoutY="309.0" text="Payment Date" />
+      <DatePicker fx:id="domPaymentDate" layoutX="340.0" layoutY="305.0" prefHeight="25.0" prefWidth="149.0" promptText="Select Date" style="-fx-background-color: transparent; -fx-border-color: #31AED1;" />
+      <ChoiceBox fx:id="domCommRate" layoutX="340.0" layoutY="364.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: #31AED1;" />
+      <ChoiceBox fx:id="domPaymentType" layoutX="340.0" layoutY="334.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: #31AED1;" />
+      <TextField fx:id="domTotAmount" layoutX="340.0" layoutY="274.0" promptText="Total" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <ChoiceBox fx:id="domDiscountChoice" layoutX="340.0" layoutY="241.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: #31AED1;" />
+      <TextField fx:id="domFirstLeg" layoutX="340.0" layoutY="119.0" promptText="Optional" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="domDestination" layoutX="340.0" layoutY="149.0" promptText="Destination" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="domCurrency" layoutX="340.0" layoutY="179.0" promptText="USD" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="domExchange" layoutX="340.0" layoutY="209.0" promptText="Optional Like (GBP/USD)" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label layoutX="203.0" layoutY="92.0" text="Departure Date" />
+      <DatePicker fx:id="domDepDate" layoutX="340.0" layoutY="88.0" prefHeight="25.0" prefWidth="149.0" promptText="Select Date" style="-fx-background-color: transparent; -fx-border-color: #31AED1;" />
+      <CheckBox fx:id="domCheckBox" layoutX="502.0" layoutY="311.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Pay Later" />
+    </children>
+</AnchorPane>

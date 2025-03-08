@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="535.0" prefWidth="686.0" style="-fx-background-color: dadce3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.AdvisorReportTableController">
+   <children>
+      <AnchorPane prefHeight="535.0" prefWidth="115.0" style="-fx-background-color: #919ecf;">
+         <children>
+            <Button layoutY="1.0" mnemonicParsing="false" onAction="#goToAdvisorHome" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Home">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            <Button layoutY="49.0" mnemonicParsing="false" onAction="#goToAdvisorSellBlank" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Sell Blank" />
+            <Button layoutY="97.0" mnemonicParsing="false" onAction="#goToAdvisorRefund" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Manage Sale" />
+            <Button layoutY="145.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: #5966cf; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Generate Report" />
+            <Button layoutY="193.0" mnemonicParsing="false" onAction="#goToAdvisorStock" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="View Stock" />
+            <Button layoutY="289.0" mnemonicParsing="false" onAction="#goToAdvisorLogout" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Logout" />
+            <Button layoutY="241.0" mnemonicParsing="false" onAction="#goToAdvisorCustomer" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Create Customer" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="adTable" layoutX="136.0" layoutY="81.0" prefHeight="207.0" prefWidth="534.0">
+        <columns>
+          <TableColumn fx:id="adTickNum" prefWidth="90.0" text="Ticket Number" />
+          <TableColumn fx:id="adTickFare" prefWidth="84.00007629394531" text="Fare Amount" />
+            <TableColumn fx:id="adTickCurr" prefWidth="65.33331298828125" text="Currency" />
+            <TableColumn fx:id="adTickExc" prefWidth="96.0" text="Exchange Rate" />
+            <TableColumn fx:id="adTickTax" prefWidth="51.333343505859375" text="Taxes" />
+            <TableColumn fx:id="adTickPay" prefWidth="57.99993896484375" text="Payment " />
+            <TableColumn fx:id="adTickComm" prefWidth="90.66668701171875" text="Commission %" />
+        </columns>
+      </TableView>
+      <Label fx:id="adPrepBy" layoutX="143.0" layoutY="38.0" text="Prepared By" />
+      <Button layoutX="476.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleDownloadPdf" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #31AED1;" text="Download" />
+      <Button layoutX="586.0" layoutY="313.0" mnemonicParsing="false" onAction="#goToAdvisorReport" style="-fx-background-color: #31AED1;" text="Cancel" />
+   </children>
+</AnchorPane>

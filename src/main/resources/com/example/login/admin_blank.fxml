@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: dadce3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.AdminBlankController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="112.0" style="-fx-background-color: #3FB93B;">
+         <children>
+            <Button layoutY="1.0" mnemonicParsing="false" onAction="#goToAdminHome" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #15860f; -fx-border-width: 0px 0px 2px 0px;" text="Home">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            <Button layoutY="49.0" mnemonicParsing="false" onAction="#goToAdminBlank" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: #388a3b; -fx-border-color: #15860f; -fx-border-width: 0px 0px 2px 0px;" text="Manage Blank" />
+            <Button layoutY="97.0" mnemonicParsing="false" onAction="#goToAdminAdvisor" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #15860f; -fx-border-width: 0px 0px 2px 0px;" text="Travel Advisor" />
+            <Button layoutY="145.0" mnemonicParsing="false" onAction="#goToAdminDatabase" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #15860f; -fx-border-width: 0px 0px 2px 0px;" text="Database" />
+            <Button layoutY="193.0" mnemonicParsing="false" onAction="#goToAdminStock" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #15860f; -fx-border-width: 0px 0px 2px 0px;" text="Stock" />
+            <Button layoutX="2.0" layoutY="241.0" mnemonicParsing="false" onAction="#goToAdminLogout" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #15860f; -fx-border-width: 0px 0px 2px 0px;" text="Logout" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="215.0" layoutY="155.0" text="From Blank" />
+      <Label layoutX="215.0" layoutY="195.0" text="To Blank" />
+      <TextField fx:id="adFromBlankField" layoutX="313.0" layoutY="150.0" promptText="From" style="-fx-background-color: transparent; -fx-border-color: #3FB93B; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="adToBlankField" layoutX="313.0" layoutY="190.0" promptText="To" style="-fx-background-color: transparent; -fx-border-color: #3FB93B; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button layoutX="313.0" layoutY="245.0" mnemonicParsing="false" onAction="#addBlanksToDatabase" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #3FB93B;" text="Insert" />
+      <Button layoutX="402.0" layoutY="245.0" mnemonicParsing="false" onAction="#goToAdminBlank" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #3FB93B;" text="Cancel" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: dadce3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.ManagerBlankController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="80.0" style="-fx-background-color: #31AED1;">
+         <children>
+            <Button layoutY="1.0" mnemonicParsing="false" onAction="#goToManagerHome" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Home">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            <Button layoutY="49.0" mnemonicParsing="false" onAction="#goToManagerBlank" prefHeight="48.0" prefWidth="117.0" style="-fx-background-color: #18b0b3 #18b0b3; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Manage Blank" />
+            <Button layoutY="97.0" mnemonicParsing="false" onAction="#goToManagerReport" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Report" />
+            <Button layoutY="145.0" mnemonicParsing="false" onAction="#goToManagerDiscount" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Manage Discount" />
+            <Button layoutY="193.0" mnemonicParsing="false" onAction="#goToManagerStock" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="View Stock" />
+            <Button layoutY="337.0" mnemonicParsing="false" onAction="#goToManagerLogout" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Logout" />
+            <Button layoutX="2.0" layoutY="241.0" mnemonicParsing="false" onAction="#goToManagerCommission" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Commission" />
+            <Button layoutY="289.0" mnemonicParsing="false" onAction="#goToManagerAlert" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Alert" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="400.0" layoutY="296.0" mnemonicParsing="false" onAction="#removeBlank" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #18b0b3;" text="Remove" />
+      <Button layoutX="300.0" layoutY="296.0" mnemonicParsing="false" onAction="#assignBlankToAdvisor" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #18b0b3;" text="Assign" />
+      <Label layoutX="205.0" layoutY="161.0" text="From Blank" />
+      <Label layoutX="205.0" layoutY="201.0" text="To Blank" />
+      <Label layoutX="208.0" layoutY="241.0" text="Advisor Id" />
+      <TextField fx:id="fromBlankField" layoutX="303.0" layoutY="156.0" promptText="From" style="-fx-background-color: transparent; -fx-border-color: #18b0b3; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="toBlankField" layoutX="303.0" layoutY="196.0" promptText="To" style="-fx-background-color: transparent; -fx-border-color: #18b0b3; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="advisorBlankField" layoutX="303.0" layoutY="236.0" promptText="ID" style="-fx-background-color: transparent; -fx-border-color: #18b0b3; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label layoutX="202.0" layoutY="85.0" text="Here you can assign and remove Blanks">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

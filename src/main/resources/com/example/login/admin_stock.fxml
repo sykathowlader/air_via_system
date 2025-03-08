@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: dadce3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.AdminStockController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="112.0" style="-fx-background-color: #3FB93B;">
+         <children>
+            <Button layoutY="1.0" mnemonicParsing="false" onAction="#goToAdminHome" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #15860f; -fx-border-width: 0px 0px 2px 0px;" text="Home">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            <Button layoutY="49.0" mnemonicParsing="false" onAction="#goToAdminBlank" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #15860f; -fx-border-width: 0px 0px 2px 0px;" text="Manage Blank" />
+            <Button layoutY="97.0" mnemonicParsing="false" onAction="#goToAdminAdvisor" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #15860f; -fx-border-width: 0px 0px 2px 0px;" text="Travel Advisor" />
+            <Button layoutY="145.0" mnemonicParsing="false" onAction="#goToAdminDatabase" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #15860f; -fx-border-width: 0px 0px 2px 0px;" text="Database" />
+            <Button layoutY="193.0" mnemonicParsing="false" onAction="#goToAdminStock" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: #388a3b; -fx-border-color: #15860f; -fx-border-width: 0px 0px 2px 0px;" text="Stock" />
+            <Button layoutX="2.0" layoutY="241.0" mnemonicParsing="false" onAction="#goToAdminLogout" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #15860f; -fx-border-width: 0px 0px 2px 0px;" text="Logout" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="admStockTable" layoutX="124.0" layoutY="13.0" prefHeight="373.0" prefWidth="461.0">
+         <columns>
+            <TableColumn fx:id="admTypeCol" prefWidth="113.99996948242188" text="Blank Type" />
+            <TableColumn fx:id="admNumCol" prefWidth="222.66668701171875" text="Blank Number" />
+            <TableColumn fx:id="admAdCol" prefWidth="123.33331298828125" text="Advisor Assigned" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

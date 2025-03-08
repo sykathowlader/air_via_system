@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.LoginController">
+   <children>
+      <TextField fx:id="usernameId" layoutX="351.0" layoutY="96.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button fx:id="loginButtonId" layoutX="351.0" layoutY="200.0" mnemonicParsing="false" onAction="#log_in" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: #31AED1;" text="Log In" />
+      <Button fx:id="cancelButtonId" layoutX="351.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleCloseApplication" prefHeight="31.0" prefWidth="151.0" style="-fx-background-color: #31AED1;" text="Cancel" />
+      <PasswordField fx:id="passwordId" layoutX="351.0" layoutY="139.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <Label fx:id="loginMessage" layoutX="351.0" layoutY="37.0" prefHeight="26.0" prefWidth="207.0" textFill="#f50707">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="400.0" prefWidth="270.0" style="-fx-background-color: #31AED1;">
+         <children>
+            <ImageView fitHeight="242.0" fitWidth="242.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../air_via.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="88.0" layoutY="247.0" prefHeight="43.0" prefWidth="93.0" text="WELCOME TO " />
+            <Line endX="155.0" layoutX="115.0" layoutY="291.0" startX="-115.0" />
+            <Label layoutX="89.0" layoutY="304.0" prefHeight="25.0" prefWidth="93.0" text="AIR VIA LTD" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

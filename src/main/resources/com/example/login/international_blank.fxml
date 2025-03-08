@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="525.0" prefWidth="600.0" style="-fx-background-color: dadce3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.AdvisorInternationalController">
+    <children>
+        <AnchorPane prefHeight="525.0" prefWidth="115.0" style="-fx-background-color: #919ecf;">
+            <children>
+                <Button layoutY="1.0" mnemonicParsing="false" onAction="#goToAdvisorHome" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Home">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets></Button>
+                <Button layoutY="49.0" mnemonicParsing="false" onAction="#goToAdvisorSellBlank" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: #5966cf; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Sell Blank" />
+                <Button layoutY="97.0" mnemonicParsing="false" onAction="#goToAdvisorRefund" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Make Refund" />
+                <Button layoutY="145.0" mnemonicParsing="false" onAction="#goToAdvisorReport" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Generate Report" />
+                <Button layoutY="193.0" mnemonicParsing="false" onAction="#goToAdvisorStock" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="View Stock" />
+                <Button layoutY="289.0" mnemonicParsing="false" onAction="#goToAdvisorLogout" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Logout" />
+                <Button layoutY="241.0" mnemonicParsing="false" onAction="#goToAdvisorCustomer" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Create Customer" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="220.0" layoutY="73.0" text="Departure" />
+        <Label layoutX="220.0" layoutY="129.0" text="1st Leg" />
+        <Label layoutX="218.0" layoutY="159.0" text="2nd Leg" />
+        <Label layoutX="220.0" layoutY="189.0" text="3rd Leg" />
+        <Label layoutX="220.0" layoutY="219.0" text="Final Destination" />
+        <Label layoutX="220.0" layoutY="249.0" text="Currency" />
+        <Label layoutX="220.0" layoutY="279.0" text="Exchange Rate" />
+        <Label layoutX="220.0" layoutY="345.0" text="Total Amount" />
+        <Label layoutX="220.0" layoutY="408.0" text="Payment Type" />
+        <TextField fx:id="intDeparture" layoutX="332.0" layoutY="69.0" promptText="Departure" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+        <Button layoutX="332.0" layoutY="469.0" mnemonicParsing="false" onAction="#make_int_sell" style="-fx-background-color: #31AED1;" text="Submit" />
+        <Button layoutX="429.0" layoutY="469.0" mnemonicParsing="false" onAction="#goToAdvisorSellBlank" style="-fx-background-color: #31AED1;" text="Cancel" />
+      <Label layoutX="221.0" layoutY="437.0" text="Commission Rate" />
+      <Label layoutX="220.0" layoutY="43.0" text="Blank Number" />
+      <ChoiceBox fx:id="intBlankChoice" layoutX="332.0" layoutY="39.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: #31AED1;" />
+      <Label layoutX="220.0" layoutY="312.0" text="Discount Amount" />
+      <DatePicker fx:id="intPaymentDate" layoutX="332.0" layoutY="371.0" prefHeight="25.0" prefWidth="150.0" promptText="Select Date" style="-fx-background-color: transparent; -fx-border-color: #31AED1;" />
+      <Label layoutX="220.0" layoutY="375.0" text="Payment Date" />
+      <TextField fx:id="intFirstLeg" layoutX="332.0" layoutY="124.0" promptText="Optional" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="intSecondLeg" layoutX="332.0" layoutY="154.0" promptText="Optional" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="intThirdLeg" layoutX="332.0" layoutY="184.0" promptText="Optional" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="intDestination" layoutX="332.0" layoutY="214.0" promptText="Destination" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="intCurrency" layoutX="332.0" layoutY="244.0" promptText="USD" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="intExchange" layoutX="332.0" layoutY="274.0" promptText="Optional Like (GBP/USD)" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <ChoiceBox fx:id="intDiscountChoice" layoutX="332.0" layoutY="307.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: #31AED1;" />
+      <TextField fx:id="intTotAmount" layoutX="332.0" layoutY="340.0" promptText="Total" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <ChoiceBox fx:id="intPaymentType" layoutX="332.0" layoutY="403.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: #31AED1;" />
+      <ChoiceBox fx:id="intCommRate" layoutX="332.0" layoutY="434.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-color: #31AED1;" />
+      <CheckBox fx:id="intCheckBox" layoutX="496.0" layoutY="377.0" mnemonicParsing="false" text="Pay Later" />
+      <DatePicker fx:id="intDepDate" layoutX="332.0" layoutY="99.0" prefHeight="25.0" prefWidth="150.0" style="-fx-border-color: #31AED1;" />
+      <Label layoutX="220.0" layoutY="103.0" text="Departure Date" />
+    </children>
+</AnchorPane>

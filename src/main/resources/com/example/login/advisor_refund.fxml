@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: dadce3;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.AdvisorRefundController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="112.0" style="-fx-background-color: #919ecf;">
+         <children>
+            <Button layoutY="1.0" mnemonicParsing="false" onAction="#goToAdvisorHome" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Home">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+            <Button layoutY="49.0" mnemonicParsing="false" onAction="#goToAdvisorSellBlank" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Sell Blank" />
+            <Button layoutY="97.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: #5966cf; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Manage Sale" />
+            <Button layoutY="145.0" mnemonicParsing="false" onAction="#goToAdvisorReport" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Generate Report" />
+            <Button layoutY="193.0" mnemonicParsing="false" onAction="#goToAdvisorStock" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="View Stock" />
+            <Button layoutY="289.0" mnemonicParsing="false" onAction="#goToAdvisorLogout" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Logout" />
+            <Button layoutY="241.0" mnemonicParsing="false" onAction="#goToAdvisorCustomer" prefHeight="48.0" prefWidth="115.0" style="-fx-background-color: transparent; -fx-border-color: #4350b5; -fx-border-width: 0px 0px 2px 0px;" text="Create Customer" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="236.0" layoutY="67.0" text="Sale Number" />
+      <Label layoutX="236.0" layoutY="106.0" text="Amount" />
+      <TextField fx:id="refundSaleField" layoutX="356.0" layoutY="62.0" promptText="Sale Number" style="-fx-background-color: tranparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="refundAmountField" layoutX="356.0" layoutY="101.0" promptText="Enter Amount" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button layoutX="356.0" layoutY="152.0" mnemonicParsing="false" onAction="#refund" style="-fx-background-color: #31AED1;" text="Make Refund" />
+      <Button layoutX="453.0" layoutY="152.0" mnemonicParsing="false" onAction="#goToAdvisorRefund" style="-fx-background-color: #31AED1;" text="Cancel" />
+      <Button layoutX="340.0" layoutY="352.0" mnemonicParsing="false" onAction="#makePayment" style="-fx-background-color: #31AED1;" text="Record Payment" />
+      <Label layoutX="236.0" layoutY="238.0" text="Sale Number" />
+      <Label layoutX="236.0" layoutY="274.0" text="Amount" />
+      <TextField fx:id="paySale" layoutX="339.0" layoutY="233.0" prefHeight="27.0" prefWidth="166.0" promptText="Sale Number" style="-fx-background-color: tranparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <TextField fx:id="payAm" layoutX="339.0" layoutY="260.0" prefHeight="27.0" prefWidth="166.0" promptText="Enter Amount" style="-fx-background-color: transparent; -fx-border-color: #31AED1; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button layoutX="453.0" layoutY="352.0" mnemonicParsing="false" onAction="#goToAdvisorRefund" prefHeight="25.0" prefWidth="51.0" style="-fx-background-color: #31AED1;" text="Cancel" />
+      <DatePicker fx:id="paymentDatePicker" layoutX="339.0" layoutY="301.0" prefHeight="25.0" prefWidth="166.0" />
+      <Label layoutX="236.0" layoutY="305.0" text="Payment Date" />
+      <Label layoutX="308.0" layoutY="33.0" text="REFUND SECTION" />
+      <Label layoutX="276.0" layoutY="200.0" text="RECORD PAYMENT SECTION" />
+   </children>
+</AnchorPane>
